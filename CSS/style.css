@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.titulo-cupula{
+    color: C5F419;
+    font-family: "Paso elevado", sans-serif;
+    font-size: 80px;
+    position: absolute;
+    top: 400px;
+    left: 160px;
+    z-index: -1;
+}
+
+
+p{
+    color:  FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+} 
+header{
+    background-color: 0161BF;
+    position: sticky ; /* el elemento sticky hace que siga el scroll */
+    top: 0px;
+    left: 0px;
+    height: 160px;
+    border-radius: 30px;
+    z-index: 100; /* el z index hace el numero de capas hacia adelante o atras */
+}
+.whatsapp-boton{
+    position:sticky;
+    top: 380px;
+    left: 1450px;
+    z-index: 120;
+}
+
+footer{
+    position: relative;
+    background-color: 0161BF;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.informacion{
+
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    position: absolute;
+}
+.contactos{
+    position: absolute;
+    top: 95px;
+    left: 650px;
+}
+.productos {
+    position: absolute;
+    top: 95px;
+    left: 820px;
+}
+.promociones{
+    position: absolute;
+    top: 95px;
+    left: 1000px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #fff     ;
+}
+
+.boton{
+    color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+    background-color: F7E346;
+    position: absolute;
+    top: 600px;
+    left: 160px;
+    border-radius: 250px;
+    padding: 10px;
+}  
+
+.imagen-moto{
+    border-radius: 60px;/*este es para redondear bordes*/
+    position: absolute;
+    top: 250px;
+    left: 918px;
+}
+.informacion-producto{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    position: absolute;
+    top: 520px;
+    left: 160px;
+}  
+.nombre-logo{
+    font-family: "Chela One", sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 75px;
+    left: 220px;
+}
+.logo{
+    position: absolute;
+    top: -25px;
+    left: -10px;
+
+}
+.usuario-de-perfil{
+    position: absolute;
+    top: 80px;
+    left: 1250px;
+}
+.lupa{
+    position: absolute;
+    top: 75px;
+    left: 1330px;
+ 
+}
+.carrito-de-compra{
+    position: absolute;
+    top: 75px;
+    left: 1410px;
+ 
+
+}
+.contacto{
+
+    display: inline;
+    position: absolute;
+    left: 170px;
+    bottom: 25px;
+}
+
+
+.envios{
+    position: absolute;
+    left: 400px;
+    bottom: 25px;
+    }
+.inicio{
+    color: #fff; 
+    position: absolute;
+    left: 50px;
+    bottom: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    
+}
+
+.mapa {
+    position:absolute;
+    right: 300px;
+    bottom: 25px;
+}
+.whatsapp{
+    position: absolute;
+    right: 250px;
+    bottom: 25px;
+}
+
+.instagram{
+    position: absolute;
+    right: 200px;
+    bottom: 25px;
+}
+.twitter{
+    position: absolute;
+    right: 150px;
+    bottom: 25px;
+}
+.facebook{
+    position: absolute;
+    right: 100px;
+    bottom: 25px;
+}
+/*pag promociones*/
+.fuego{
+    position: absolute;
+    top: 315px;
+    left: 580px;
+    height: 50px;
+}
+.titulo-promociones{
+    color: C5F419;
+    font-family: "Paso elevado", sans-serif;
+    font-size: 70px;
+    position: absolute;
+    top: 300px;
+    left: 100px;  
+}
+.immagen-parrilla{
+    position: absolute;
+    top: 500px;
+    left: 120px;  
+    border-radius: 100px;
+}
+
+.parrila-ktm{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    position: absolute;
+    top: 920px;
+    left: 150px;
+    font-size: 20px;
+    text-align:justify; /*este es para darle indicaciones al texto */
+}   
+.boton-compra{
+    color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: F7E346;
+    position: absolute;
+    top: 1000px;
+    left: 160px;
+    border-radius: 250px;
+    padding: 10px;
+}
+.imagen-cortavientos{
+    
+    position: absolute;
+    top: 500px;
+    left: 610px;  
+    border-radius: 100px;
+}
+.cortavientos-ktm{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    position: absolute;
+    top: 920px;
+    left: 640px;
+    font-size: 20px;
+    text-align:justify; /*este es para darle indicaciones al texto */
+}
+.boton-compra1{
+    color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: F7E346;
+    position: absolute;
+    top: 1000px;
+    left: 650px;
+    border-radius: 250px;
+    padding: 10px;
+}
+.imagen-defensa{
+    position: absolute;
+    top: 500px;
+    left: 1090px;  
+    border-radius: 100px;
+}
+.defensa-bmw{
+    position: absolute;
+    top: 920px;
+    left: 1150px;
+    font-size: 20px;
+    text-align:justify; /*este es para darle indicaciones al texto */
+    text-align: center;
+}
+.boton-compra2{
+    color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: F7E346;
+    position: absolute;
+    top: 1000px;
+    left: 1150px;
+    border-radius: 250px;
+    padding: 10px;
+}
+/*productos*/
+.titulo-productos{
+    color: C5F419;
+    font-family: "Paso elevado", sans-serif;
+    font-size: 70px;
+    position: absolute;
+    top: 300px;
+    left: 100px;  
+}
+.immagen-parrilla-honda{
+    position: absolute;
+    top: 1150px;
+    left: 120px;  
+    border-radius: 100px;
+}
+
+.parrila-honda-p1{
+    position: absolute;
+    top: 1570px;
+    left: 150px;
+    font-size: 20px;
+    text-align:justify; /*este es para darle indicaciones al texto */
+}   
+.boton-compra-p1{
+    color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: F7E346;
+    position: absolute;
+    top:1650px;
+    left: 160px;
+    border-radius: 250px;
+    padding: 10px;
+}
+.imagen-defensa-apache{
+    position: absolute;
+    top: 1150px;
+    left: 610px;  
+    border-radius: 100px;
+}
+.defensa-apache{
+    position: absolute;
+    top: 1570px;
+    left: 650px;
+    font-size: 20px;
+    text-align:justify; /*este es para darle indicaciones al texto */
+    text-align: center;
+}
+.boton-compra-p2{
+    color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: F7E346;
+    position: absolute;
+    top: 1650px;
+    left: 650px;
+    border-radius: 250px;
+    padding: 10px;
+}
+.imagen-parrilla-kimco{
+    position: absolute;
+    top: 1150px;
+    left: 1090px;  
+    border-radius: 100px;
+}
+.parrilla-kimco{position: absolute;
+top: 1570px;
+left: 1150px;
+font-size: 20px;
+text-align:justify; /*este es para darle indicaciones al texto */
+text-align: center;
+}
+.boton-compra-p3{
+    color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: F7E346;
+    position: absolute;
+    top: 1650px;
+    left: 1150px;
+    border-radius: 250px;
+    padding: 10px;
+}
+.whatsapp-boton1{
+    position:fixed;
+    top: 380px;
+    left: 1445px;
+    z-index: 120;
+}
+
+.mapa1 {
+    position: absolute;
+    right: 300px;
+    bottom: 25px;
+}
+.whatsapp1{
+    position: absolute;
+    right: 250px;
+    bottom: 25px;
+}
+
+.instagram1{
+    position: absolute;
+    right: 200px;
+    bottom: 25px;
+}
+.twitter1{
+    position: absolute;
+    right: 150px;
+    bottom: 25px;
+}
+.facebook1{
+    position: absolute;
+    right: 100px;
+    bottom: 25px;
+}
+.contacto1{
+
+    display: inline;
+    position: absolute;
+    left: 170px;
+    bottom: 25px;
+}
+.envios1{
+    position: absolute;
+    left: 400px;
+    bottom: 25px;
+    }
+.inicio1{
+    color: #fff; 
+    position: absolute;
+    left: 50px;
+    bottom: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    
+}
+.numeros-de-pagina{
+    position: absolute;
+    left: 440px;
+    bottom: -1400px;
+    
+}
+
+/*contacto*/
+.titulo-contacto{
+    color: C5F419;
+    font-family: "Paso elevado", sans-serif;
+    font-size: 70px;
+    position: absolute;
+    top: 300px;
+    left: 100px;  
+}
+.contacto-wha{
+    position: absolute;
+    left: 200px;
+    top: 600px;
+}
+.nombre-wha{
+    color:  FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left: 230px;
+    top: 850px;
+}
+.contacto-instagram{
+    position: absolute;
+    left: 650px;
+    top: 600px;
+}
+.nombre-insta{
+    color:  FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left: 680px;
+    top: 850px;
+}
+.contacto-correo{
+    position: absolute;
+    left: 1050px;
+    top: 600px;
+}
+.nombre-correo{
+    color:  FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left: 1110px;
+    top: 850px;
+}/*ususario*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 80px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  /*pag  por producto*/
+ .caracteristicas{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    height: 400px;
+    width: 580px;
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    font-size: 25px;
+    text-align:justify; /*este es para darle indicaciones al texto */
+    text-align:left;
+    list-style-type: none;/*este le quita los numeros de lista */
+ }
+ .comprar{
+    color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: F7E346;
+    position: absolute;
+    top: 750px;
+    left: 300px;
+    border-radius: 250px;
+    padding: 10px;
+ }
+.mas-productos{
+    color: C5F419;
+    font-family: "Paso elevado", sans-serif;
+    font-size: 60px;
+    position: absolute;
+    top: 1000px;
+    left: 100px;
+}
+.tools{
+    position: absolute;
+    top: 1000px;
+    left: 550px;
+    height: 50px;
+    width: 50px;
+}
+
+.mas-pro{
+    border-radius: 50px;
+    position: absolute;
+    top: 1200px;
+    left: 100px;
+    height: 320px;
+    width: 250px;
+    
+}
+
+.mas-prod2{
+    position: absolute;
+    top: 1200px;
+    left: 650px;  
+    border-radius: 50px;
+    height: 320px;
+    width: 250px;
+}
+.mas-prod3{
+    position: absolute;
+    top: 1200px;
+    left: 1200px;  
+    border-radius: 50px;
+    height: 320px;
+    width: 250px;
+}
