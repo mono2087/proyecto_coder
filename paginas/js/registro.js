@@ -38,3 +38,7 @@ document.getElementById('Formulario').addEventListener('submit', function(event)
         console.error('Error:', error);
     });
 });
+document.getElementById('registro').addEventListener('click', function(event) {
+    event.preventDefault(); // Previene el comportamiento predeterminado del enlace
+    window.location.href = 'ingreso.html'; // Usar una URL relativa
+});

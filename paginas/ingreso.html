@@ -8,15 +8,16 @@
     <title>Inicio de Sesión - Monkey Garage</title>
 </head>
 <body>
-    <form id="FormularioInicio" method="POST">
+    <form id="FormularioInicio" method="POST" action="./php/ingreso.php">
         <section class="form-register">
             <p>Inicio de Sesión</p>
             <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
             <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña" required>
             <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a></p>
+            <p><a id="cuenta" href="./usuario.html">No tengo cuenta</a></p>
             <input class="botons" type="submit" value="Ingresar">
         </section>
     </form>
-  
+    <script src="./js/ingreso.js"></script>
 </body>
 </html>
