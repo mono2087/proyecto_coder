@@ -13,25 +13,24 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Recibir datos del formulario
-$nombres = $_POST['nombres'];
-$apellidos = $_POST['apellidos'];
-$correo = $_POST['correo'];
-$contrasena = password_hash($_POST['contrasena'], PASSWORD_BCRYPT); // Encriptar la contraseña
-$numeroDocumento = $_POST['cedula'];
-    if ( strlen($contrasena)<8){
-        echo "la contraseña detener minimo 8 caracteres";
-        exit();//este tuene de funcion de detener la ejecucion de le scrip 
-    }
-    if (strpos($correo, '@') === false) {
-        echo "El correo no es correcto";
-        return; // Detener la ejecución del script si el correo no contiene el carácter "@"
-    }
-   // if (strlen($numeroDocumento)<=10){
-      //  echo"Debe tener 10 caracteres";
-     //   exit();
- //   }
-    
+// Recibir y sanitizar datos del formulario
+$nombres = $conn->real_escape_string($_POST['nombres']);
+$apellidos = $conn->real_escape_string($_POST['apellidos']);
+$correo = $conn->real_escape_string($_POST['correo']);
+$contrasena = $conn->real_escape_string($_POST['contrasena']); // No se encripta la contraseña
+$numeroDocumento = $conn->real_escape_string($_POST['cedula']);
+
+// Validaciones del lado del servidor
+if (strlen($contrasena) < 7 || !preg_match('/[!@#$%^&*(),.?":{}|<>]/', $contrasena)) {
+    echo "La contraseña debe tener al menos 8 caracteres y contener al menos un carácter especial.";
+    exit;
+}
+
+if (strpos($correo, '@') === false) {
+    echo "El correo no es correcto";
+    exit;
+}
+
 // Insertar datos en la base de datos
 $sql = "INSERT INTO usuario (nombres, apellidos, correo, contrasena, numeroDocumento) 
 VALUES ('$nombres', '$apellidos', '$correo', '$contrasena', '$numeroDocumento')";
@@ -45,4 +44,3 @@ if ($conn->query($sql) === TRUE) {
 // Cerrar conexión
 $conn->close();
 ?>
-
