@@ -1,0 +1,2 @@
+Ejecutando consulta: 
+Número de filas afectadas: 2
