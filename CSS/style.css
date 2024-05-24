@@ -39,6 +39,12 @@ header{
     top: 750px;
     left: 1930px;
     z-index: 120;
+    cursor: pointer;
+}
+.whatsapp-boton:hover{
+    background: #45d88f;
+    transform: scale(1.2);
+    border-radius: 5px;
 }
 
 footer{
@@ -61,36 +67,43 @@ footer{
     top: 95px;
     left: 950px;
     cursor: pointer;
+    transition: 0.5s;
 }
 .contactos:hover{
     background: #0b4174;
     height: 50px;
     margin-top: -10px;
     border-radius: 25px;
+    transform: scale(1.2);
 }
 
 .productos {
     position: absolute;
     top: 95px;
     left: 1150px;
+    transition: 0.5s;
 }
 .productos:hover {
     background: #0b4174;
     height: 50px;
     margin-top: -10px;
     border-radius: 25px;
+    transform: scale(1.2);
 }
 
 .promociones{
     position: absolute;
     top: 95px;
+    
     left: 1350px;
+    transition: 0.5s;
 }
 .promociones:hover{
     background: #0b4174;
     height: 50px;
     margin-top: -10px;
     border-radius: 25px;
+    transform: scale(1.2);
 }
 
 a{
@@ -110,13 +123,30 @@ a{
     left: 160px;
     border-radius: 250px;   
     padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
 }  
+.boton:hover{
+    transform:scale(1.2);
+
+}
 .imagen-moto{
     border-radius: 60px;/*este es para redondear bordes*/
     position: absolute;
     top: 250px;
     left: 1000px;
+    transition: 1s;
 }
+.imagen-moto:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: scale(1.1);
+    }
+
 .informacion-producto{
     font-family: 'Inter', sans-serif;
     font-size: 28px;
@@ -141,6 +171,10 @@ a{
     position: absolute;
     top: 80px;
     left: 1600px;
+    transition: 0.5s;
+}
+.usuario-de-perfil:hover{
+    transform: scale(1.2);
 }
 .lupa{
     position: absolute;
@@ -286,6 +320,7 @@ a{
     left: 275px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
 .imagen-cortavientos{
     position: absolute;
@@ -321,6 +356,7 @@ a{
     left: 885px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
 .imagen-defensa{
     position: absolute;
@@ -355,6 +391,7 @@ a{
     left: 1500px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
 /*productos*/
 .titulo-productos{
@@ -397,6 +434,7 @@ a{
     left: 275px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
 .imagen-defensa-apache{ /*Con efecto */
     position: absolute;
@@ -431,6 +469,7 @@ a{
     left: 885px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
 .imagen-parrilla-kimco{
     position: absolute;
@@ -464,6 +503,7 @@ text-align: center;
     left: 1510px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }  
 .numeros-de-pagina{
     position: relative;                                                         
@@ -587,6 +627,7 @@ text-align: center;
     color: white;
     margin: 16px 0;
     font-size: 16px;
+    cursor: pointer;
   }
   /*pag  por producto*/
  .caracteristicas{
@@ -615,6 +656,7 @@ text-align: center;
     left: 300px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
  }
 .mas-productos{
     color: C5F419;
@@ -639,6 +681,10 @@ text-align: center;
     left: 100px;
     height: 320px;
     width: 250px;
+    transition: 1s;
+}
+.mas-pro:hover{
+    transform: scale(1.3);
 }
 .mas-prod2{
     position: absolute;
@@ -647,6 +693,10 @@ text-align: center;
     border-radius: 50px;
     height: 320px;
     width: 250px;
+    transition: 1s;
+}
+.mas-prod2:hover{
+    transform: scale(1.3);
 }
 .mas-prod3{
     position: absolute;
@@ -655,4 +705,8 @@ text-align: center;
     border-radius: 50px;
     height: 320px;
     width: 250px;
+    transition: 1s;
+}
+.mas-prod3:hover{
+    transform: scale(1.3);
 }
