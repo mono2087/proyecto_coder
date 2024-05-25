@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/logo/mono azul1.png">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Monkey Garage</title>
+</head>
+<body>
+    <a class="logo" href="../paginas/productos.html"><img src="../imagenes/logo/mono azul1.png"width="200px" height="200px" alt=""></a>
+    <form id="Formulario" action="./php/registro.php" method="post">
+        <section class="form-register">
+            <p>Crear producto</p>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder=" Nombre del producto" required>
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Valor del producto" required>
+            <input class="controls" type="number" name="cedula" id="cedula" placeholder="Cantidad disponible" required >
+            <input class="controls" type="text" name="correo" id="correo" placeholder="Imagen del producto" required>
+            <input class="controls" type="text" name="contrasena" id="contrasena" placeholder="Descripcion" required>
+            <input class="botons" type="submit" value="Publicar">
+        </section>
+    </form>  
+    <script src="./js/registro.js"></script>
+</body>
+</html>

@@ -1,9 +1,12 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 body{
     background-color: black;
+    width: 2000px;
+    height: 100vh;
+
 }
 .titulo-cupula{
     color: C5F419;
@@ -15,7 +18,6 @@ body{
     z-index: -1;
 }
 
-
 p{
     color:  FFFFFF;
     font-family: 'Inter', sans-serif;
@@ -23,25 +25,35 @@ p{
 } 
 header{
     background-color: 0161BF;
-    position: sticky ; /* el elemento sticky hace que siga el scroll */
+    position: relative ; /* el elemento sticky hace que siga el scroll */
     top: 0px;
+    width: 2000px;
     left: 0px;
     height: 160px;
     border-radius: 30px;
     z-index: 100; /* el z index hace el numero de capas hacia adelante o atras */
+    margin: 20px auto;
 }
 .whatsapp-boton{
-    position:sticky;
-    top: 380px;
-    left: 1450px;
+    position:fixed;
+    top: 750px;
+    left: 1930px;
     z-index: 120;
+    cursor: pointer;
+}
+.whatsapp-boton:hover{
+    background: #45d88f;
+    transform: scale(1.2);
+    border-radius: 5px;
 }
 
 footer{
     position: relative;
     background-color: 0161BF;
-    height: 80px;
+    width: 2000px;
+    height: 10%;
     border-radius: 20px;
+    margin: auto;
 }
 
 .informacion{
@@ -53,26 +65,51 @@ footer{
 .contactos{
     position: absolute;
     top: 95px;
-    left: 650px;
+    left: 950px;
+    cursor: pointer;
+    transition: 0.5s;
 }
+.contactos:hover{
+    background: #0b4174;
+    height: 50px;
+    margin-top: -10px;
+    border-radius: 25px;
+    transform: scale(1.2);
+}
+
 .productos {
     position: absolute;
     top: 95px;
-    left: 820px;
+    left: 1150px;
+    transition: 0.5s;
 }
+.productos:hover {
+    background: #0b4174;
+    height: 50px;
+    margin-top: -10px;
+    border-radius: 25px;
+    transform: scale(1.2);
+}
+
 .promociones{
     position: absolute;
     top: 95px;
-    left: 1000px;
+    
+    left: 1350px;
+    transition: 0.5s;
 }
-
-
+.promociones:hover{
+    background: #0b4174;
+    height: 50px;
+    margin-top: -10px;
+    border-radius: 25px;
+    transform: scale(1.2);
+}
 
 a{
     text-decoration: none;
     color: #fff     ;
 }
-
 .boton{
     color: black;
     text-align: center;
@@ -84,16 +121,32 @@ a{
     position: absolute;
     top: 600px;
     left: 160px;
-    border-radius: 250px;
+    border-radius: 250px;   
     padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
 }  
+.boton:hover{
+    transform:scale(1.2);
 
+}
 .imagen-moto{
     border-radius: 60px;/*este es para redondear bordes*/
     position: absolute;
     top: 250px;
-    left: 918px;
+    left: 1000px;
+    transition: 1s;
 }
+.imagen-moto:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: scale(1.1);
+    }
+
 .informacion-producto{
     font-family: 'Inter', sans-serif;
     font-size: 28px;
@@ -117,35 +170,46 @@ a{
 .usuario-de-perfil{
     position: absolute;
     top: 80px;
-    left: 1250px;
+    left: 1600px;
+    transition: 0.5s;
+}
+.usuario-de-perfil:hover{
+    transform: scale(1.2);
 }
 .lupa{
     position: absolute;
     top: 75px;
-    left: 1330px;
- 
+    left: 1800px;
+    cursor: pointer;
+    width: auto;
 }
 .carrito-de-compra{
     position: absolute;
     top: 75px;
-    left: 1410px;
- 
-
+    left: 1700px;
+    cursor: pointer;
 }
 .contacto{
-
     display: inline;
     position: absolute;
     left: 170px;
     bottom: 25px;
+    cursor: pointer;
 }
-
-
+.contacto:hover{
+    height: 50px;
+    margin-top: -10px;
+}
 .envios{
     position: absolute;
     left: 400px;
     bottom: 25px;
+    cursor: pointer;
     }
+.envios:hover{
+    height: 50px;
+    margin-top: -10px;
+}
 .inicio{
     color: #fff; 
     position: absolute;
@@ -153,18 +217,19 @@ a{
     bottom: 25px;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
-    
 }
-
+.inicio:hover{
+    height: 50px;
+    margin-top: -10px;
+}
 .mapa {
     position:absolute;
-    right: 300px;
-    bottom: 25px;
-}
-.whatsapp{
-    position: absolute;
     right: 250px;
     bottom: 25px;
+}
+.mapa:hover {
+    height: 50px;
+    margin-top: -10px;
 }
 
 .instagram{
@@ -172,44 +237,73 @@ a{
     right: 200px;
     bottom: 25px;
 }
+.instagram:hover{
+    height: 50px;
+    margin-top: -10px;
+}
+
 .twitter{
     position: absolute;
     right: 150px;
     bottom: 25px;
 }
+.twitter:hover{
+    height: 50px;
+    margin-top: -10px;
+}
+
 .facebook{
     position: absolute;
     right: 100px;
     bottom: 25px;
 }
+.facebook:hover{
+    height: 50px;
+    margin-top: -10px;
+}
 /*pag promociones*/
 .fuego{
     position: absolute;
     top: 315px;
-    left: 580px;
+    left: 1250px;
     height: 50px;
-}
+}                 
+
+.fuego:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    }
+
 .titulo-promociones{
     color: C5F419;
     font-family: "Paso elevado", sans-serif;
     font-size: 70px;
     position: absolute;
     top: 300px;
-    left: 100px;  
+    left: 750px;  
 }
 .immagen-parrilla{
     position: absolute;
     top: 500px;
-    left: 120px;  
-    border-radius: 100px;
+    left: 185px;  
+    border-radius: 50px;
+    transition: 1s;
+    height: 43%;
+    width: 20%;
 }
-
+.immagen-parrilla:hover{
+    transform: scale(1.2);
+}
 .parrila-ktm{
     font-family: 'Inter', sans-serif;
     font-size: 28px;
     position: absolute;
-    top: 920px;
-    left: 150px;
+    top: 940px;
+    left: 255px;
     font-size: 20px;
     text-align:justify; /*este es para darle indicaciones al texto */
 }   
@@ -223,23 +317,29 @@ a{
     background-color: F7E346;
     position: absolute;
     top: 1000px;
-    left: 160px;
+    left: 275px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
 .imagen-cortavientos{
-    
     position: absolute;
     top: 500px;
-    left: 610px;  
-    border-radius: 100px;
+    left: 800px;  
+    border-radius: 50px;
+    transition: 1s;
+    height: 43%;
+    width: 20%;
+}
+.imagen-cortavientos:hover{
+    transform: scale(1.2);
 }
 .cortavientos-ktm{
     font-family: 'Inter', sans-serif;
     font-size: 28px;
     position: absolute;
-    top: 920px;
-    left: 640px;
+    top: 940px;
+    left: 865px;
     font-size: 20px;
     text-align:justify; /*este es para darle indicaciones al texto */
 }
@@ -253,20 +353,27 @@ a{
     background-color: F7E346;
     position: absolute;
     top: 1000px;
-    left: 650px;
+    left: 885px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
 .imagen-defensa{
     position: absolute;
     top: 500px;
-    left: 1090px;  
-    border-radius: 100px;
+    left: 1400px;  
+    border-radius: 50px;
+    transition: 1s;
+    height: 43%;
+    width: 20%;
 }
+.imagen-defensa:hover{
+    transform: scale(1.2);
+}                          
 .defensa-bmw{
     position: absolute;
-    top: 920px;
-    left: 1150px;
+    top: 940px;
+    left: 1500px;
     font-size: 20px;
     text-align:justify; /*este es para darle indicaciones al texto */
     text-align: center;
@@ -281,9 +388,10 @@ a{
     background-color: F7E346;
     position: absolute;
     top: 1000px;
-    left: 1150px;
+    left: 1500px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
 /*productos*/
 .titulo-productos{
@@ -292,19 +400,24 @@ a{
     font-size: 70px;
     position: absolute;
     top: 300px;
-    left: 100px;  
+    left: 42%;  
 }
 .immagen-parrilla-honda{
     position: absolute;
     top: 1150px;
-    left: 120px;  
-    border-radius: 100px;
+    left: 185px;  
+    border-radius: 50px;
+    transition: 1s;
+    height: 43%;
+    width: 20%;
 }
-
+.immagen-parrilla-honda:hover{
+    transform: scale(1.2);
+}
 .parrila-honda-p1{
     position: absolute;
-    top: 1570px;
-    left: 150px;
+    top: 1590px;
+    left: 265px;
     font-size: 20px;
     text-align:justify; /*este es para darle indicaciones al texto */
 }   
@@ -318,20 +431,27 @@ a{
     background-color: F7E346;
     position: absolute;
     top:1650px;
-    left: 160px;
+    left: 275px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
-.imagen-defensa-apache{
+.imagen-defensa-apache{ /*Con efecto */
     position: absolute;
     top: 1150px;
-    left: 610px;  
-    border-radius: 100px;
+    left: 800px;  
+    border-radius: 50px;
+    transition: 1s;
+    height: 43%;
+    width: 20%;
+}
+.imagen-defensa-apache:hover{
+    transform: scale(1.2);
 }
 .defensa-apache{
     position: absolute;
-    top: 1570px;
-    left: 650px;
+    top: 1590px;
+    left: 875px;
     font-size: 20px;
     text-align:justify; /*este es para darle indicaciones al texto */
     text-align: center;
@@ -346,19 +466,26 @@ a{
     background-color: F7E346;
     position: absolute;
     top: 1650px;
-    left: 650px;
+    left: 885px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
 }
 .imagen-parrilla-kimco{
     position: absolute;
     top: 1150px;
-    left: 1090px;  
-    border-radius: 100px;
+    left: 1400px;  
+    border-radius: 50px;
+    transition: 1s;
+    height: 43%;
+    width: 20%;
+}
+.imagen-parrilla-kimco:hover{
+    transform: scale(1.2);
 }
 .parrilla-kimco{position: absolute;
-top: 1570px;
-left: 1150px;
+top: 1590px;
+left: 1500px;
 font-size: 20px;
 text-align:justify; /*este es para darle indicaciones al texto */
 text-align: center;
@@ -373,71 +500,16 @@ text-align: center;
     background-color: F7E346;
     position: absolute;
     top: 1650px;
-    left: 1150px;
+    left: 1510px;
     border-radius: 250px;
     padding: 10px;
-}
-.whatsapp-boton1{
-    position:fixed;
-    top: 380px;
-    left: 1445px;
-    z-index: 120;
-}
-
-.mapa1 {
-    position: absolute;
-    right: 300px;
-    bottom: 25px;
-}
-.whatsapp1{
-    position: absolute;
-    right: 250px;
-    bottom: 25px;
-}
-
-.instagram1{
-    position: absolute;
-    right: 200px;
-    bottom: 25px;
-}
-.twitter1{
-    position: absolute;
-    right: 150px;
-    bottom: 25px;
-}
-.facebook1{
-    position: absolute;
-    right: 100px;
-    bottom: 25px;
-}
-.contacto1{
-
-    display: inline;
-    position: absolute;
-    left: 170px;
-    bottom: 25px;
-}
-.envios1{
-    position: absolute;
-    left: 400px;
-    bottom: 25px;
-    }
-.inicio1{
-    color: #fff; 
-    position: absolute;
-    left: 50px;
-    bottom: 25px;
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
-    
-}
+    cursor: pointer;
+}  
 .numeros-de-pagina{
-    position: absolute;
+    position: relative;                                                         
     left: 440px;
     bottom: -1400px;
-    
 }
-
 /*contacto*/
 .titulo-contacto{
     color: C5F419;
@@ -445,45 +517,54 @@ text-align: center;
     font-size: 70px;
     position: absolute;
     top: 300px;
-    left: 100px;  
+    left: -720px;  
 }
 .contacto-wha{
     position: absolute;
-    left: 200px;
+    left: 520px;
     top: 600px;
+}
+.contacto-wha:hover{
+    filter: blur(7px);    
 }
 .nombre-wha{
     color:  FFFFFF;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     position: absolute;
-    left: 230px;
+    left: 540px;
     top: 850px;
 }
 .contacto-instagram{
     position: absolute;
-    left: 650px;
+    left: 920px;
     top: 600px;
+}
+.contacto-instagram:hover{
+    filter: blur(7px);    
 }
 .nombre-insta{
     color:  FFFFFF;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     position: absolute;
-    left: 680px;
+    left: 950px;
     top: 850px;
 }
 .contacto-correo{
     position: absolute;
-    left: 1050px;
+    left: 1300px;
     top: 600px;
+}
+.contacto-correo:hover{
+    filter: blur(7px);    
 }
 .nombre-correo{
     color:  FFFFFF;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     position: absolute;
-    left: 1110px;
+    left: 1360px;
     top: 850px;
 }/*ususario*/
 * {
@@ -546,6 +627,7 @@ text-align: center;
     color: white;
     margin: 16px 0;
     font-size: 16px;
+    cursor: pointer;
   }
   /*pag  por producto*/
  .caracteristicas{
@@ -574,6 +656,7 @@ text-align: center;
     left: 300px;
     border-radius: 250px;
     padding: 10px;
+    cursor: pointer;
  }
 .mas-productos{
     color: C5F419;
@@ -598,9 +681,11 @@ text-align: center;
     left: 100px;
     height: 320px;
     width: 250px;
-    
+    transition: 1s;
 }
-
+.mas-pro:hover{
+    transform: scale(1.3);
+}
 .mas-prod2{
     position: absolute;
     top: 1200px;
@@ -608,6 +693,10 @@ text-align: center;
     border-radius: 50px;
     height: 320px;
     width: 250px;
+    transition: 1s;
+}
+.mas-prod2:hover{
+    transform: scale(1.3);
 }
 .mas-prod3{
     position: absolute;
@@ -616,4 +705,15 @@ text-align: center;
     border-radius: 50px;
     height: 320px;
     width: 250px;
+    transition: 1s;
 }
+.mas-prod3:hover{
+    transform: scale(1.3);
+}
+.nueva_pagina{
+    position: absolute;
+    top: 80px;
+    left: 1600px;
+    
+}
+
