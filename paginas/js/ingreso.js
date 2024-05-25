@@ -1,7 +1,7 @@
 document.getElementById('cuenta').addEventListener('click', function(event) {
     event.preventDefault(); // Previene el comportamiento predeterminado del enlace
     window.location.href = "usuario.html"; // Usar una URL relativa
-});
+    });
 document.getElementById('FormularioInicio').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevenir el envío del formulario de la manera predeterminada
 
